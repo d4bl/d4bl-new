@@ -1,0 +1,178 @@
+<head>
+    <meta charset="utf-8">
+    <title>Data for Black Lives</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+    <link href="./d4bl.css" rel="stylesheet">
+    <link href="./d4bl-global.css" rel="stylesheet">
+      <style>
+      #footer {
+        color: #fff !important;
+      }
+      #footer a {
+        color: #fff !important;
+        border-bottom-color: #fff !important;
+      }
+      #footer a:hover {
+        border-bottom-color: #fff !important;
+      }
+      @media (max-width: 535px) {
+        .blur {
+          opacity: .6 !important;
+        }
+      }
+      </style>
+          <script src="/javascript/jquery-3.1.0.min.js"></script>
+</head>
+  <body>
+    <div id="homepage-content">
+      <header>
+          <div id="mobile-greeting">
+            Welcome to Data for Black Lives<br>
+            Today is <span id="date">October 13, 2019</span>
+           <script src="assets/js/date.js"></script>
+          </div>
+            <script>
+              $(function() {
+              $('.toggle-extra-buttons').click(function(){
+              $('.extra-buttons').removeClass('extra-buttons')
+              $('.toggle-extra-buttons').hide();
+              });
+              });
+            </script>
+              <div class="mobile-menu-button">Menu</div>
+                <div id="menu">
+                  <a href="" class="current">Data for Black Lives</a>
+                  <a href="./about.html">About</a>
+                  <a href="https://medium.com/@Data4BlackLives">Blog</a>
+                  <a href="./events.html">Events</a>
+                  <a href="./conference.html">Conference</a>
+                  <a href="https://secure.actblue.com/donate/data-for-black-lives-1?refcode=d4blsite">Donate</a>
+                  <a href="./action.html">Action</a>
+                  <!-- <a href="./network.html">Network</a>
+                  <a href="./resources.html">Resources</a> -->
+                  <a href="./join.html">Join</a>
+                  <a href="./contact.html">Contact</a>
+                </div>
+                <div class="tagline">Data for Black Lives is dedicated to the mission of using data and technology to create concrete and measurable change in the lives of Black people.</div>
+      </header>
+      <script>
+              function mobileReorder(){
+                var window_height = $(window).width();
+                // var document_height = $(document).height();
+
+                if (window_height < 535) {
+                    console.log('mobile');
+                    $(".columns").appendTo(".columns-mobile");
+                } else {
+                    console.log('desktop');
+                }
+              }
+              mobileReorder();
+            });
+      </script>
+        <style>
+        .list { position: fixed; top: 0; right: 0; background: yellow; overflow-y: scroll;}
+        #menu a .light { display: block; !important; }
+        #menu a .dark { display: none; !important; }
+        #menu a { border: 1px dotted #fff; }
+        </style>
+
+
+    <!-- ### New Section -->
+
+<nav>
+  <div class="columns">
+    <div class="column one-fourth">
+      <h2 class="browse-nav">Initiatives</h2>
+      <div id="items-homepage">
+          <a href="./abolish-big-data.html">Abolish Big Data</a>
+          <!-- <a href="./public-data-trust.html">Public Data Trust</a> -->
+          <a href="./facial-recognition.html">Facial Recognition</a>
+          <a href="./open-letter.html">An Open Letter to Facebook</a>
+          <a href="./data-for-public-good.html">Data for Public Good</a>
+          <a href="./initiatives.html">View All</a>
+        <!-- <a class="ellipsis" id="show-more-button-focuses"><span id="a">...</span><span id="b">More focuses...</span></a>
+        <div class="show-more-focuses">
+          <a class="close" id="close-focuses"><span class="symbol"></span></a>
+        </div> -->
+      </div>
+    </div>
+    <div class="column one-fourth">
+      <h2 class="browse-nav">Press</h2>
+      <div id="items-homepage">
+          <a href="https://www.forbes.com/sites/ashoka/2019/12/11/why-we-need-data-for-black-lives/#317d17c27bd4">Why We Need Data for Black Lives</a>
+          <a href="https://www.forbes.com/profile/data-for-black-lives/#5a91058c6edc">Forbes Under 30</a>
+        <a href="https://nextcity.org/daily/entry/data-for-black-conference-boston-scientists-activists">Data for Black Lives Wants to Connect Scientists and Activists</a>
+        <a href="https://garage.vice.com/en_us/article/kzn4jn/data-for-black-lives-is-an-organization-using-analytics-as-a-tool-for-social-change">Data for Black Lives Is an Organization Using Analytics as a Tool for Social Change</a>
+        <a href="https://www.dailykos.com/stories/2017/12/18/1724131/-Data-for-Black-Lives-How-to-Design-Justice">Data for Black Lives: How to Design Justice</a>
+        <a href="https://medium.com/@YESHICAN/an-open-letter-to-facebook-from-the-data-for-black-lives-movement-81e693c6b46c">What if Facebook Used Data for Black Lives?</a>
+        <a href="https://d4bl.typeform.com/to/M7Hu7L">Request a press statement</a>
+      </div>
+    </div>
+    <div class="column one-fourth">
+      <h2 class="browse-nav">Conference 2020</h2>
+        <div id="items-homepage">
+          <a href="./conference.html">Information</a>
+          <a href="./conference.html">Speakers</a>
+          <a href="./conference.html">Register</a>
+        </div>
+      </div>
+      <br>
+    </div>
+      
+    <div class="clearer"></div>
+
+    <h2 id="this-week">Sign up for our newsletter</h2><br>
+      <div class="extension-container">
+          <div class="typeform-widget" data-url="https://d4bl.typeform.com/to/wg6agF" data-transparency="100" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 350px;">
+          </div> 
+          <script> 
+            (function() { 
+              var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, 
+              id="typef_orm", b="https://embed.typeform.com/"; 
+          
+              if(!gi.call(d,id)) { 
+                js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) 
+              } 
+            })() 
+          </script> 
+        </div>
+      </div>
+</nav>
+
+<!-- Line Break -->
+
+  <div class="clearer"></div>
+
+<!-- Footer -->
+
+  <div class="home">
+    <div id="footer">
+      <span class="left">
+        <div class="under-construction">
+          <a class="scroll-to-top" href="#">
+          </a>
+            <div class="text">
+                For us, this is about more than just data. This is about fighting new forms of racism and discrimination enabled by technology and unleashing the true potential of data to uplift and empower communities. <a href="./join.html" target="_blank">Join</a> our movement!
+            </div>
+          </div>
+
+<!-- Line Break -->
+
+    <div class="clearer"></div>
+      <br><br>
+        <!-- <span class="kickstarter">
+          Data for Black Lives a a non-profit with support from 
+            <a href="https://www.macfound.org/" target="_blank">The McArthur Foundation</a>.
+        </span> -->
+          <span class="other-links">
+            Powered by <a href="http://hound.nyc/">HOUND</a>.
+            <br>
+            <br>
+          </span>
+            <div id="menu">
+          </span>
+          <a href="#" class="scroll">back to top</a>
+        </div>
+</body>

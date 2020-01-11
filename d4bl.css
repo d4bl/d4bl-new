@@ -1,0 +1,624 @@
+* {
+  box-sizing: border-box; 
+}
+
+html {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  background-color: #000;
+  -webkit-text-size-adjust: none; 
+}
+
+body {
+  margin: 15px;
+  margin-bottom: 12px; 
+}
+
+html.light {
+  background-color: #fff; 
+}
+
+html.light header {
+  color: #000; 
+}
+
+html.light nav {
+  min-height: initial; 
+}
+
+html.light nav header {
+  display: none; 
+}
+
+html.light nav .box.note {
+  border: 1px dotted #000; 
+}
+
+html.light nav .box.wisdom {
+  border: 1px dotted transparent; 
+}
+
+html.light nav .box.note:hover {
+  border: 1px solid #000; 
+}
+
+header {
+  color: #fff;
+  line-height: 1.3; 
+}
+
+  header a {
+    color: #000;
+    border-radius: 100px;
+    text-decoration: none; 
+  }
+
+.ellipsis span#a {
+  display: inline; 
+}
+
+.ellipsis:hover span#a {
+  display: none; 
+}
+
+.ellipsis span#b {
+  display: none; 
+}
+
+.ellipsis:hover span#b {
+  display: inline; 
+}
+
+#items-homepage {
+  color: #fff;
+  font-family: 'Menlo', monospace;
+  font-size: 80%;
+  line-height: 1.8; 
+}
+
+#items-homepage a {
+  color: #fff;
+  text-decoration: none;
+  padding: 2px 6px;
+  margin: 12px 0px 0px 0px;
+  display: block;
+  border: 1px dotted #fff;
+  border-radius: 3px;
+}
+
+#items-homepage a:last-child {
+  border-bottom: 1px dotted #fff !important; 
+}
+
+#items-homepage a:hover {
+  background: #fff;
+  color: #000; 
+}
+
+#show-more-button-focuses, #show-more-button-themes, #show-more-button-disciplines {
+  cursor: pointer;
+  border-bottom: 1px dotted #fff !important; 
+}
+
+.show-more-focuses, .show-more-themes, .show-more-disciplines {
+  display: none; }
+
+.search-box {
+  background: url("/images/search.svg") !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important;
+  color: #fff !important; }
+  .search-box .title {
+    font-size: 100%;
+    color: #fff !important; }
+
+@media (max-width: 535px) {
+  .search-box {
+    display: none !important; }
+
+  #items-homepage a {
+    color: #000;
+    border: 1px dotted #000;
+    width: 100%; 
+  }
+
+  .temp-mobile {
+    border-bottom: 1px dotted #000 !important; 
+  }
+
+  .column {
+    width: 100% !important; 
+  }
+
+  #items-homepage a:last-child {
+    border-bottom: 1px dotted #000 !important; 
+  }
+
+  #show-more-button-focuses, #show-more-button-themes, #show-more-button-disciplines {
+    border-bottom: 1px dotted #000 !important; 
+    } 
+  }
+
+.extension-container {
+  margin: 0 auto 1em;
+  width: 265px;
+  display: inline; 
+}
+
+.extension-circle {
+  border-radius: 50%;
+  font-size: 80%;
+  width: 265px;
+  height: 265px;
+  text-align: center;
+  line-height: 265px;
+  background-color: #fff;
+  display: inline-block;
+  font-family: 'Menlo', monospace; 
+}
+
+.extension-link {
+  text-decoration: none;
+  color: #000; 
+}
+
+.extension-button {
+  margin-top: 20px;
+  font-family: 'Menlo', monospace;
+  font-size: 1em;
+  border: 1px dotted #000;
+  padding: 11px;
+  color: #000;
+  background-color: #FFF; 
+}
+
+.extension-button:hover {
+  border: 1px solid #000;
+  cursor: pointer; 
+}
+ 
+.no-selection a {
+  text-decoration: none;
+  border-bottom: 1px dotted #000;
+  color: #000; }
+  .no-selection a:hover {
+    border-bottom-style: solid; 
+  }
+
+#mobile-greeting {
+  display: none;
+  font-family: 'Menlo', monospace;
+  font-size: 80%;
+  margin-top: 1em; 
+}
+
+.mobile-menu-button {
+  display: none !important;
+  font-family: 'Menlo', monospace;
+  font-size: 80%;
+  padding: 11px;
+  border: 1px dotted #000;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 13px; 
+}
+
+  .mobile-menu-button:hover {
+    border-style: solid; 
+  }
+
+.mobile-menu-button.open {
+  border-style: solid; 
+}
+
+nav {
+  background: #fff;
+  display: block;
+  background: transparent;
+  box-sizing: border-box; 
+}
+
+  nav h2 {
+    font-size: 1em;
+    font-weight: normal;
+    background: #fff;
+    border-radius: 100px;
+    display: inline-block;
+    font-family: 'Menlo', monospace;
+    font-size: 80%;
+    padding: 2px 6px;
+    margin: 0;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    position: relative; 
+  }
+
+  /* This is weird but an easy way to divy up the bottom spacing on desktop */
+#homepage-content {
+  margin-bottom: 100vh; 
+}
+
+h2.normal {
+  background: #fff; 
+}
+
+h2.normal:after {
+  background: transparent !important; 
+}
+
+h2.approach-home-title {
+  margin-bottom: 0.5em; 
+}
+
+.box {
+  padding: 4px 6px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  width: 13.5em;
+  height: 13.5em;
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0 7px 7px 0; 
+}
+
+  .box span {
+    font-family: 'Menlo', monospace;
+    font-size: 80%; 
+  }
+
+  .box a .label .title {
+    display: block; 
+  }
+
+html.light nav.wide {
+  width: 100%;
+  min-height: initial; 
+}
+
+html.light #menu a {
+  color: #000;
+  border-color: #000; 
+}
+
+nav .list a {
+  color: #000 !important;
+  border-bottom: 1px dotted #000 !important; 
+}
+
+nav .list a:hover {
+  border-bottom: 1px solid #000 !important;
+  background: white !important;
+  color: #000 !important; 
+}
+
+nav .box {
+  font-family: Georgia;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  width: 13.5em;
+  height: 13.5em;
+  padding: 15px;
+  box-sizing: border-box;
+  margin: 0 5px 9px 0; }
+  nav .box.note, nav .box.note:hover {
+    border: 1px solid #fff; 
+  }
+
+.label-center {
+  margin: auto;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  height: 100%; 
+}
+
+.image-container a {
+  width: 100%;
+  height: 100%;
+  cursor: alias; 
+}
+
+nav .box a {
+  color: inherit;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  position: relative; 
+}
+
+  nav .box a .date {
+    font-family: 'Menlo', monospace;
+    font-size: 80%;
+    position: absolute;
+    top: -10px;
+    left: -8px; 
+  }
+
+  nav .box a .label {
+    margin: auto;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    text-align: center; 
+  }
+
+nav .list a {
+  color: #000 !important;
+  border-bototm: 1px dotted #000 !important; 
+}
+
+nav .list a:hover {
+  border-bottom: 1px solid #000 !important; 
+}
+
+nav a.see-all {
+  text-decoration: none;
+  border-bottom: 1px dotted #000; 
+}
+
+  nav a.see-all:hover {
+    border-bottom: 1px solid #000; 
+  }
+
+#mobile-title {
+  display: none;
+  margin-bottom: 15px; 
+}
+
+a#return {
+  color: #fff;
+  padding: 11px;
+  border: 1px solid #fff;
+  display: inline-block;
+  text-decoration: none; 
+}
+
+  a#return:hover {
+    background: #fff;
+    color: #000; 
+  }
+
+html.light a#return {
+  margin-top: 2em;
+  border: 1px dotted #000;
+  color: #000; 
+}
+
+  html.light a#return:hover {
+    border-style: solid; 
+  }
+
+/* Menu Button */
+#menu {
+  margin: 0.75em 0 0; 
+}
+
+#menu a {
+  font-family: 'Menlo', monospace;
+  font-size: 80%;
+  color: #fff;
+  padding: 11px;
+  border: 1px dotted #000;
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 4px;
+  margin-bottom: 8px; 
+}
+
+#menu a.current {
+  border-style: solid;
+ }
+
+#menu a:hover {
+  border-style: solid; }
+
+#menu a .light {
+  display: none; 
+}
+
+#menu a .dark {
+  display: block; 
+}
+
+#homepage-content #menu a {
+  border: 1px solid #fff; 
+}
+
+#homepage-content #menu a .light {
+  display: block; 
+}
+
+#homepage-content #menu a .dark {
+  display: none; 
+}
+
+#homepage-content #menu a:hover .light {
+  display: block; 
+}
+
+#homepage-content #menu a:hover .dark {
+  display: none; 
+}
+
+#homepage-content #menu a.current {
+  background: #fff;
+  color: #000;
+  border: 1px solid #fff; 
+}
+
+#homepage-content #menu a:hover {
+  border-bottom: 1px solid #fff;
+  background: #fff;
+  color: #000 !important; 
+}
+
+#items {
+  font-family: 'Menlo', monospace;
+  font-size: 80%;
+  line-height: 1.4; 
+}
+
+#items a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px dotted #000;
+  margin-left: 6px; 
+}
+
+  #items a:hover {
+    border-bottom: 1px solid #000; 
+  }
+
+.columns {
+  box-sizing: border-box;
+ }
+
+.column {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 13.5em;
+  margin-right: 5px;
+  padding: 6px 2px; }
+  .column u {
+    margin: 2px 6px;
+    font-family: 'Menlo', monospace;
+    font-size: 80%;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.9em; }
+
+#items {
+  font-family: 'Menlo', monospace;
+  font-size: 80%;
+  line-height: 1.4; 
+}
+
+#items a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 1px dotted #000; 
+  } 
+  #items a:hover {
+    border-bottom: 1px solid #000; 
+  }
+
+/* Sorry to whoever has to deal with all of these breakpoints :( */
+
+@media (max-width: 535px) {
+  html {
+    background-color: #fff; 
+  }
+
+  body, header {
+    color: #000; 
+  }
+
+  .column {
+    margin-top: 0em;
+    padding: 0; 
+  }
+
+  .column:first-child {
+    margin-top: 0 !important; 
+  }
+
+  #homepage-content {
+    margin-bottom: 0; 
+  }
+
+  #menu a .light {
+    display: none !important; 
+  }
+
+  #menu a .dark {
+    display: block !important; 
+  }
+
+  .mobile-menu-button {
+    display: block !important; 
+  }
+
+  #mobile-greeting {
+    display: block; 
+  }
+
+  #menu {
+    display: block; 
+  }
+
+  header {
+    position: static; 
+  }
+
+  nav {
+    position: relative;
+    box-sizing: border-box;
+    background-color: transparent; 
+  }
+    nav .box {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 13px; 
+    }
+
+      nav .box a .label .title {
+        display: block; 
+      }
+
+      nav .box a .label .name {
+        display: none; 
+      }
+      
+  #menu a {
+    color: #000 !important;
+    border: 1px dotted #000 !important; 
+  }
+
+    #menu a.current {
+      border-style: solid !important;
+      background: #000 !important;
+      color: white !important; 
+    }
+
+  html.light nav {
+    position: relative;
+    min-height: initial; 
+  }
+
+    html.light nav header {
+      position: relative;
+      padding: 0;
+      display: block;
+      margin-bottom: 1em; 
+    }
+
+  html.light nav.wide {
+    width: 100%;
+    position: relative;
+    margin-top: 0; 
+  }
+
+  html.light nav .box.note {
+    border: 1px solid #000; 
+  }
+
+  nav .box.approach {
+    border: 1px dotted #000;
+    color: #000; 
+  }
+
+    nav .box.approach .title {
+      font-weight: bold; 
+    } 
+  }
